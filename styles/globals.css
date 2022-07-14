@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Raleway&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.2;
+  color: #818181;
+  font-family: "Raleway", sans-serif;
+  background: #011162 url("../public/images/header-image-bg.jpg");
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
+}
+button {
+  border: #0f62d8;
+  padding: 14px 20px;
+  border-radius: 100px;
+}
+::placeholder {
+    color: #818181;
+}
+
+/* NAV */
+.logo {
+    margin-right: 16.5em;
+    padding-top: .5em;
+}
+
+.logo-sm {
+    height: 77px;
+    width: auto;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+    outline: 3px solid rgba(whitesmoke, .75);
+    border-radius: 5px;
+}
+
+.nav-toggle-label {
+  grid-column: 2 / span 3;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+  background: #0f4c97bb;
+  transform: scale(1, 0);
+  transition: transform 400ms ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    grid-column: 2 / span 3;
+  }
+}

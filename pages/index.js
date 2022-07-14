@@ -15,9 +15,9 @@ export default function Home() {
       <Navbar />
       <main className={styles.main}>
         <div className="main-banner">
-            <h1 className={styles.title}>IT AND MANAGEMENT CONSULTING FOR LARGE ENTERPRISES</h1>
+            <h1 className="text-3xl font-bold underline">IT AND MANAGEMENT CONSULTING FOR LARGE ENTERPRISES</h1>
             <p>Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eget sit amet tellus cras. Eget gravida cum sociis natoque.</p>
-            <button>SCHEDULE APPOINTMENT</button>
+            <button className="bg-blue-600 text-sm font-semibold text-center uppercase text-white">SCHEDULE APPOINTMENT</button>
         </div>
       </main>
       <Footer />
