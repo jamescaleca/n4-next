@@ -8,14 +8,23 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 flex w-full flex-col">
+    <footer >
       <div className="footer-cont">
-        <ul className='flex list-none w-full justify-between p-0 footer-content'>
+        <ul className='footer-content'>
           <li className="footer-social-li">
-            <Image alt="n4-logo" src={Logo} className="logo-sm" />
+            <div className="h-20 w-auto relative">
+              <a href="#top">
+                  <Image 
+                    alt="logo" 
+                    src={Logo} 
+                    layout="fill"
+                    objectFit="contain"
+                  />
+              </a>
+            </div>
           </li>
           <li className="footer-email-li">
-            <ul className="p-0">
+            <ul >
               <li className="hidden">HOME</li>
               <li className="hidden">ABOUT</li>
               <li className="hidden">SERVICES</li>
@@ -37,11 +46,48 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <ul className="flex list-none justify-around flex-row w-full p-0 content-between social-links">
-        <li><Image alt="fb-icon" src={FB} /></li>
-        <li><Image alt="insta-icon" src={Insta} /></li>
-        <li><Image alt="twitter-icon" src={Twitter} /></li>
-        <li><Image alt="yt-icon" src={YT} /></li>
+      <ul className="social-links">
+        <li>
+          <div className="h-20 w-auto relative icon-wrapper">
+            <Image 
+              alt="fb-icon" 
+              src={FB} 
+              layout="fill"
+              objectFit="contain"
+              style={"filter: invert(65%) sepia(0%) saturate(1351%) hue-rotate(205deg) brightness(87%) contrast(91%);"}
+            />
+          </div>
+        </li>
+        <li>
+          <div className="h-20 w-auto relative icon-wrapper">
+            <Image 
+              alt="insta-icon" 
+              src={Insta} 
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </li>
+        <li>
+          <div className="h-20 w-auto relative icon-wrapper">
+            <Image 
+              alt="twitter-icon" 
+              src={Twitter} 
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </li>
+        <li>
+          <div className="h-20 w-auto relative icon-wrapper">
+            <Image 
+              alt="yt-icon" 
+              src={YT} 
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </li>
       </ul>
     </footer>
   )

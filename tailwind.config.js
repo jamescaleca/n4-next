@@ -5,6 +5,10 @@ module.exports = {
     './components/**/*.{html,js}',
   ],
   theme: {
+    fontFamily: {
+      "orbitron": ["Orbitron", "sans serif"],
+      "raleway": ["Raleway", "sans serif"]
+    },
     screens: {
       sm: '480px',
       md: '768px',

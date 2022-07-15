@@ -11,70 +11,19 @@ export default function Home() {
         <title>N4 Enterprises</title>
         <meta name="description" content="IT Management and Consulting for Large Enterprises" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Raleway&display=swap" rel="stylesheet"></link>
       </Head>
       <Navbar />
-      <main className={styles.main}>
+      <main className={`${styles.main} text-slate-100`}>
         <div className="main-banner">
-            <h1 className="text-3xl font-bold underline">IT AND MANAGEMENT CONSULTING FOR LARGE ENTERPRISES</h1>
-            <p>Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eget sit amet tellus cras. Eget gravida cum sociis natoque.</p>
+            <h1 className="text-3xl font-bold underline font-orbitron">IT AND MANAGEMENT CONSULTING FOR LARGE ENTERPRISES</h1>
+            <p className="cont-card">Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Amet consectetur adipiscing elit ut aliquam purus sit amet. Eget sit amet tellus cras. Eget gravida cum sociis natoque.</p>
             <button className="bg-blue-600 text-sm font-semibold text-center uppercase text-white">SCHEDULE APPOINTMENT</button>
         </div>
       </main>
       <Footer />
-
-      {/* <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
     </div>
   )
 }
