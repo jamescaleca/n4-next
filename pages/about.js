@@ -13,7 +13,7 @@ export default function About() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Raleway&display=swap" rel="stylesheet"></link>
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="cont-card">
         <div className="about-p">
           <h1>ABOUT US</h1>

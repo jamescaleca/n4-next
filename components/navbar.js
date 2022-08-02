@@ -19,19 +19,19 @@ export default function Navbar() {
       <nav>
         <ul >
           <li >
-            <Link href="/" >HOME</Link>
+            <Link href="/"><a>HOME</a></Link>
           </li>
           <li >
-            <Link href="/about" >ABOUT</Link>
+            <Link href="/about"><a>ABOUT</a></Link>
           </li>
           <li >
-            <Link href="/services" >SERVICES</Link>
+            <Link href="/services"><a>SERVICES</a></Link>
           </li>
           <li >
-            <Link href="/insights" >INSIGHTS</Link>
+            <Link href="/insights"><a>INSIGHTS</a></Link>
           </li>
           <li >
-            <Link href="/contact" >CONTACT</Link>
+            <Link href="/contact"><a>CONTACT</a></Link>
           </li>
           <li >
             <button className="bg-blue-600 text-sm font-semibold text-center uppercase text-white">BOOK NOW</button>

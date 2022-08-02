@@ -4,15 +4,15 @@ import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Services() {
   return (
     <div className={styles.container}>
-      <Head>
+      {/* <Head>
         <title>N4 Enterprises</title>
         <meta name="description" content="IT Management and Consulting for Large Enterprises" />
         <link rel="icon" href="/favicon.ico" />
         
-      </Head>
+      </Head> */}
       {/* <Navbar /> */}
       <main className={`${styles.main} text-slate-100`}>
         <div className="main-banner">
